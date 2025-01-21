@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, red, black);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeInDown 1.2s ease;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: black;
+  }
+  
+  .course-section, .progress-section, .certificate-section {
+    margin-bottom: 2rem;
+  }
+  
+  #courseList, #certificateList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #courseList li, #certificateList li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #courseList li:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-3px);
+  }
+  
+  #progressContainer {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: slideIn 0.8s ease;
+  }
+  
+  footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
